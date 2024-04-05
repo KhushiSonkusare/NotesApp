@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/generalbg"
+    tools:context=".MainActivity2"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Details"
+        android:layout_marginTop="11dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="72dp"
+        android:text="Enter your name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelName"
+        android:layout_marginTop="8dp"
+        android:hint="Your Name"
+        android:background="@drawable/roundcorner_field"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:text="Enter your email"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelEmail"
+        android:layout_marginTop="8dp"
+        android:hint="Your Email"
+        android:background="@drawable/roundcorner_field"
+        android:padding="10dp"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/labelBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="49dp"
+        android:text="Select your branch"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelBranch"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/roundcorner_field"
+        android:entries="@array/branch_options"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelYear"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/roundcorner_field"
+        android:entries="@array/year_options"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/labelYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelBranch"
+        android:layout_marginTop="104dp"
+        android:text="Select your year of study"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelYear"
+        android:layout_marginTop="142dp"
+        android:backgroundTint="#6F6FC8"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

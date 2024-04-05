@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="year_options">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+    </string-array>
+    <string-array name="branch_options">
+        <item>CSE</item>
+        <item>Data Science</item>
+        <item>Cyber Security</item>
+        <item>AIML</item>
+    </string-array>
+</resources>
