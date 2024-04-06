@@ -18,15 +18,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"/>
 
-    <TextView
-        android:id="@+id/friendsTextView"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="normal"
         android:layout_below="@id/textView"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="16dp">
 
-
+        <LinearLayout
+            android:id="@+id/friends_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="#FFFFFF" />
+    </ScrollView>
 </RelativeLayout>

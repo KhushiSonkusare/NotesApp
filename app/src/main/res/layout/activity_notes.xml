@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"/>
 
-    <!-- Grid of Icons -->
+
 
     <GridLayout
         android:layout_width="match_parent"

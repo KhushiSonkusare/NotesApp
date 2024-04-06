@@ -16,19 +16,22 @@ public class NotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
 
-        // Find the "Connect with Friends" button
+
         Button connectWithFriendsButton = findViewById(R.id.connectWithFriendsButton);
 
-        // Set an OnClickListener for the button
+
         connectWithFriendsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                connectWithFriends();
+                Intent intent = new Intent(NotesActivity.this, ConnectWithFriendsActivity.class);
+                String userBranch = getIntent().getStringExtra("UserBranch");
+                intent.putExtra("UserBranch", userBranch);
+                startActivity(intent);
             }
         });
     }
 
-    // Method to open the ConnectWithFriendsActivity
+
     private void connectWithFriends() {
         Intent intent = new Intent(NotesActivity.this, ConnectWithFriendsActivity.class);
         startActivity(intent);
